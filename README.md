@@ -3,7 +3,12 @@
 This repository contains the works and projects developed during my academic formation of 5 years. It includes various projects and exercises from different courses and field of studies.
 
 ## Contents
-- [nn](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/CP2-ENSA-DEVOIR-LIBRE-DE-PROGRAMMATION-C-)
+> [JAVA /JEE](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/java)
+> [Simplex method](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/simplex-method-coded)
+> [OpenHack2022-SBRP-VRP](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/OpenHack2022-SBRP-VRP-)
+> [Data Analysis](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/dataAnalysis)
+> [Image Processing](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/imageProcessing)
+> [DEVOIR LIBRE DE PROGRAMMATION C](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/CP2-ENSA-DEVOIR-LIBRE-DE-PROGRAMMATION-C-)
 
 ## nn
 This folder contains..
