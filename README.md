@@ -10,9 +10,6 @@ This repository contains the works and projects developed during my academic for
 > [Image Processing](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/imageProcessing) <br>
 > [DEVOIR LIBRE DE PROGRAMMATION C](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/CP2-ENSA-DEVOIR-LIBRE-DE-PROGRAMMATION-C-) <br>
 
-## nn
-This folder contains..
-
 ## Usage
 Feel free to browse the code and use it as a reference or inspiration for your own projects.
 
