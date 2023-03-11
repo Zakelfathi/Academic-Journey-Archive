@@ -9,9 +9,14 @@ This repository contains the works and projects developed during my academic for
 > [Data Analysis](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/dataAnalysis) <br>
 > [Image Processing](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/imageProcessing) <br>
 > [DEVOIR LIBRE DE PROGRAMMATION C](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/CP2-ENSA-DEVOIR-LIBRE-DE-PROGRAMMATION-C-) <br>
+> [Power BI](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/Power%20BI) <br>
+> [data cleansing](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/data%20cleansing) <br>
+> [Optimization works](https://github.com/Zakelfathi/Academic-Journey-Archive/tree/master/Optimization%20works) <br>
+
+
 
 ## Usage
 Feel free to browse the code and use it as a reference or inspiration for your own projects.
 
 ## Feedback
-We would be happy to hear any feedback or suggestions you may have.
+I would be happy to hear any feedback or suggestions you may have.
