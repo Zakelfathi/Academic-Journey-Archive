@@ -1,0 +1,92 @@
+body{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+    background-color: #222;
+
+}
+
+
+form {
+    width: 30%; /* adjust this value as needed */
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  form h3 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 1px #00e3e3;
+  }
+
+  form label {
+    color: #fff;
+    text-shadow: 0 0 1px #00e3e3;
+  }
+
+  form input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #00e3e3;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 1px #00e3e3;
+  }
+
+  form input[type="text"]:focus {
+    outline: none;
+    border-bottom: 2px solid #fff;
+  }
+
+  form button {
+    background-color: #00e3e3;
+    color: #111;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 0 0 1px #fff;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #00e3e3;
+  }
+
+  table {
+    width: 65%; /* adjust this value as needed */
+    border: 2px solid rgb(255, 255, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #00e3e3;
+  }
+
+  table th {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 0 0 1px #00e3e3;
+  }
+
+  table td {
+    color: #fff;
+    padding: 10px;
+    text-shadow: 0 0 1px #00e3e3;
+  }
+
+  .my-button {
+    background-color: #00e3e3;
+    color: #111;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 10px 10px 10px;
+    text-shadow: 0 0 1px #fff;
+    box-shadow: 0 0 0px #fff, 0 0 2px #fff, 0 0 0px #fff, 0 0 4px #00e3e3;
+}
+  

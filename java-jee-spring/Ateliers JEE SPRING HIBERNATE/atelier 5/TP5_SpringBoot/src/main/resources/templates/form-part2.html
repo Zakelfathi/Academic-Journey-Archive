@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Ajouter Inscription</title>
+	<link rel="stylesheet" type="text/css" th:href="@{css/style.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{bootstrap/bootstrap.min.css}" />
+	
+</head>
+
+<body>
+
+<!--  	<div class="login-box ">
+		<h2>Ajouter Etudiant:</h2>
+		<form method="post" th:action="@{save}">
+			<div class="input-group">
+				<div class="user-box">
+					<input type="text" class="form-control" th:value="${etudiant.firstName}" id="firstName"
+						name="firstName" placeholder="votre prenom" required/>
+				</div>
+				<div class="user-box">
+					<input type="text" class="form-control" th:value="${etudiant.lastName}" id="lastName"
+						name="lastName" placeholder="votre prenom" required/>
+				</div>
+				<div class="user-box">
+					<input type="email" class="form-control" th:value="${etudiant.email}" id="email" name="email"
+						placeholder="votre email" required />
+				</div>
+				<div class="user-box">
+					<input type="text" class="form-control" th:value="${etudiant.cne}" id="cne" name="cne"
+						placeholder="votre CNE" required />
+					<span th:errors="${etudiant.cne}"></span>
+				</div>
+				<label class="user-box">Date de naissance:</label>
+				<div class="user-box">
+					<input type="date" th:value="${etudiant.dNaiss}" id="dNaiss" name="dNaiss" required/>
+				</div>
+				<label class="user-box">telephone:</label>
+				<div class="user-box">
+					<input type="tele" class="form-control" th:value="${etudiant.tele}" id="tele" name="tele"
+						placeholder="votre numero de telephone" required />
+					<span th:errors=${etudiant.tele}></span>
+
+				</div>
+			</div>
+			<button type="submit">save</button>
+		</form>
+	</div>
+	
+	-------------------->
+	
+	<div class="login-box">	
+		 <h2>Inscription:</h2>
+		 <form  method="post"  th:object="${inscription}" th:action="@{save_inscription}">
+		 <div class="input-group">
+		
+	 			<div class="user-box">
+				<input type="text" class="form-control"  th:field="*{etudiant.firstName}" id="firstName"
+       name="firstName" placeholder="votre prenom" required/>
+				</div>
+			
+				<div class="user-box">
+					<input type="text" class="form-control"  th:field="*{etudiant.lastName}" id="lastName"
+						name="lastName" placeholder="votre prenom" required/>
+				</div>
+				<div class="user-box">
+					<input type="email" class="form-control"  th:field="*{etudiant.email}" id="email" name="email"
+						placeholder="votre email" required />
+				</div>
+				<div class="user-box">
+					<input type="text" class="form-control"  th:field="*{etudiant.cne}" id="cne" name="cne"
+						placeholder="votre CNE" required />
+				</div>
+				<label class="user-box">Date de naissance:</label>
+				<div class="user-box">
+					<input type="date"  th:field="*{etudiant.dNaiss}" id="dNaiss" name="dNaiss" required/>
+				</div>
+				<label class="user-box">telephone:</label>
+				<div class="user-box">
+					<input type="tele" class="form-control"  th:field="*{etudiant.tele}" id="tele" name="tele"
+						placeholder="votre numero de telephone" required />
+				</div>
+				 
+
+			<label class="user-box">Date de Inscription:</label>
+			<div class="user-box">
+    			<input type="date" class="form-control"  th:field="*{dInscription}" id="dInscription" name="dInscription" placeholder="votre date inscription">
+			</div>
+			<div class="user-box">
+				<input type="number" class="form-control" th:field="*{dInscription}"  id="nbrAnneeInscription" name="nbrAnneeInscription" placeholder="Nombre d'ans d'inscription">
+			</div>
+			<div class="user-box">
+    			<input type="text" class="form-control"  th:field="*{dInscription}"  id="groupe" name="groupe" placeholder="votre groupe">
+			</div>
+			
+			
+			<div class="user-box">
+	   				<select name="niveau"  th:field="*{niveau}" class="custom-select" id="niveau" >
+  					  <option value=" ">Select niveau..</option>
+					  <option value="1">1</option>
+					  <option value="2">2</option>
+					  <option value="3">3</option>
+					</select>
+			</div>
+			
+			<div class="user-box">
+	   				<select name=cycle  th:field="*{cycle}" class="custom-select" id="cycle" >
+  					  <option value=" ">Select cycle..</option>
+					  <option value="preparatoire">preparatoire</option>
+					  <option value="d'ingenieur">d'ingenieur</option>
+					</select>
+			</div>
+			<div class="user-box">
+	   				<select name="filiere" th:field="*{filiere}" class="custom-select" id="filiere" >
+  					  <option value=" ">Select filiere..</option>
+					  <option value="cp">CP</option>
+					  <option value="iric">IRIC</option>
+					  <option value="iid">IID</option>
+					  <option value="gi">GI</option>
+					  <option value="ge">GE</option>
+					  <option value="gpee">GPEE</option>
+					</select>
+			</div>
+			
+			<button  type="submit">envoyer</button>
+      		
+		</div>
+		</form>
+	</div>
+
+	</body>
+
+</html>

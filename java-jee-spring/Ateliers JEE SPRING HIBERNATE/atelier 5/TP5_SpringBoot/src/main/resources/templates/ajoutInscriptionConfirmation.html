@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Inscriptions Dashboard</title>
+	<link rel="stylesheet" type="text/css" th:href="@{css/styleAffichage.css}" />
+</head>
+
+<body>
+	<div class="login-box">
+			<h3>Inscription QUE VOUS AVEZ SAISIE:</h3>
+		<hr/>
+		<div class="input-group">
+			<div class="user-box">
+				<h1><strong>PRENOM:</strong>
+					<h3 th:text="${etudiant.firstName}"></h3>
+				</h1>
+			</div>
+			<div class="user-box">
+				<h1><strong>NOM:</strong>
+					<h3 th:text="${etudiant.lastName}"></h3>
+				</h1>
+			</div>
+			<div class="user-box">
+				<h1><strong>EMAIL:</strong>
+					<h3 th:text="${etudiant.email}"></h3>
+
+				</h1>
+			</div>
+			<div class="user-box">
+				<h1><strong>CNE:</strong>
+					<h3 th:text="${etudiant.cne}"></h3>
+				</h1>
+
+			</div>
+			<div class="user-box">
+				<h1> <strong>DATE DE NAISSANCE:</strong>
+					<h3 th:text="${etudiant.dNaiss}"></h3>
+
+				</h1>
+			</div>
+			<div class="user-box">
+				<h1><strong>TELEPHONE:</strong>
+					<h3 th:text="${inscription.etudiant.tele}"></h3>
+
+				</h1>
+				
+				<div class="user-box">
+				<h1><strong>id ins:</strong>
+					<h3 th:text="${inscription.id_insc}"></h3>
+
+				</h1>
+			</div>
+						    <a  th:href="@{/form}">Ajouter une autre inscription</a>
+					
+		</div>
+	</div>
+	<!--  
+	<div class="login-box">
+		<h3>TABLE DES ETUDIANTS:</h3>		<hr/>
+		
+		<table class="input-group " border="1">
+			
+				<tr>
+					<th>ID etudiant</th>
+					<th>nom</th>
+					<th>email</th>
+					<th>telephone</th>
+					<th>CNE</th>
+					<th>date de naissance</th>
+					<th>date INSCRIPTION</th>
+					
+				</tr>
+				<tr >
+				    <td th:text="${etudiant.id}"></td>
+				    <td th:text="${etudiant.firstName + ' ' + etudiant.lastName}"></td>
+				    <td th:text="${etudiant.email}"></td>
+					<td th:text="${etudiant.tele}"></td>
+				   	<td th:text="${etudiant.cne}"></td>
+				    <td th:text="${etudiant.dNaiss}"></td>
+				</tr>
+			
+				<tr th:each="e:${listEtudiants}">
+					<td th:text="${e.id}"></td>
+					<td th:text="${e.firstName + ' ' + e.lastName}"></td>
+					<td th:text="${e.email}"></td>
+					<td th:text="${e.tele}"></td>
+					<td th:text="${e.cne}"></td>
+					<td th:text="${e.dNaiss}"></td>
+				</tr>
+			
+		</table>
+		<div class="input-group">
+		<h3>TROUVER ETUDIANTS</h3>		
+		<form th:action="@{save}" method="post">
+			<input type="text" name="mc" th:value="${mc}" />
+			<button class="btn btn-primary">chercher</button>
+		</form>
+	</div>
+			
+		
+		<div class="container">
+			<ul class="nav nav-pills">
+				<li th:class="${currentPage}==${status.index}?'active':''" th:each="page,status:${pages}">
+					<a th:class="page-link" th:href="@{index(page=${status.index}, size=${size}, mc=${mc})}"
+						th:text="${status.index}"></a>
+				</li>
+			</ul>
+		</div>
+		-->
+	</div>
+	
+
+</body>
+
+</html> 

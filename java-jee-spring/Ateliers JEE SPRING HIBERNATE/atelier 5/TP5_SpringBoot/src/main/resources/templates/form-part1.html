@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Ajouter Etudiant</title>
+	<link rel="stylesheet" type="text/css" th:href="@{css/style.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{bootstrap/bootstrap.min.css}" />
+	
+</head>
+
+<body>
+	<div class="login-box ">
+		<h2>Ajouter Etudiant:</h2>
+		<form method="post" th:action="@{save}">
+			<div class="input-group">
+				<div class="user-box">
+					<input type="text" class="form-control" th:value="${etudiant.firstName}" id="firstName"
+						name="firstName" placeholder="votre prenom" required/>
+				</div>
+				<div class="user-box">
+					<input type="text" class="form-control" th:value="${etudiant.lastName}" id="lastName"
+						name="lastName" placeholder="votre prenom" required/>
+				</div>
+				<div class="user-box">
+					<input type="email" class="form-control" th:value="${etudiant.email}" id="email" name="email"
+						placeholder="votre email" required />
+				</div>
+				<div class="user-box">
+					<input type="text" class="form-control" th:value="${etudiant.cne}" id="cne" name="cne"
+						placeholder="votre CNE" required />
+					<span th:errors="${etudiant.cne}"></span>
+				</div>
+				<label class="user-box">Date de naissance:</label>
+				<div class="user-box">
+					<input type="date" th:value="${etudiant.dNaiss}" id="dNaiss" name="dNaiss" required/>
+				</div>
+				<label class="user-box">telephone:</label>
+				<div class="user-box">
+					<input type="tele" class="form-control" th:value="${etudiant.tele}" id="tele" name="tele"
+						placeholder="votre numero de telephone" required />
+					<span th:errors=${etudiant.tele}></span>
+
+				</div>
+			</div>
+			<button type="submit">save</button>
+		</form>
+	</div>
+
+	</body>
+
+</html>
